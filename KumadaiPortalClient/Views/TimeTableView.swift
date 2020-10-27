@@ -38,14 +38,3 @@ struct TimeTableView: View {
         })
     }
 }
-
-struct PeriodCell: View {
-    let period: Period?
-    var body: some View {
-        if let name = period?.courses.first?.name {
-            Text(name)
-        } else {
-            Color.white
-        }
-    }
-}

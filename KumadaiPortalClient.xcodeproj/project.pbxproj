@@ -10,6 +10,9 @@
 		0B2DF89E2541832800065712 /* TimeTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DF89D2541832800065712 /* TimeTableViewModel.swift */; };
 		0B2F899825480E5A007FD22C /* KumadaiPortal-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F899725480E5A007FD22C /* KumadaiPortal-Info.plist */; };
 		0B2F899C25486803007FD22C /* ExampleKumadai-Portal-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B2F899B25486803007FD22C /* ExampleKumadai-Portal-Info.plist */; };
+		0B2F899E25486DC9007FD22C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F899D25486DC9007FD22C /* RootView.swift */; };
+		0B2F89A025486E41007FD22C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F899F25486E40007FD22C /* SignInView.swift */; };
+		0B2F89A225486E88007FD22C /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F89A125486E88007FD22C /* PeriodCell.swift */; };
 		0B3C0F39253F439900028EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F38253F439900028EF9 /* AppDelegate.swift */; };
 		0B3C0F3B253F439900028EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F3A253F439900028EF9 /* SceneDelegate.swift */; };
 		0B3C0F3D253F439900028EF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F3C253F439900028EF9 /* ContentView.swift */; };
@@ -19,7 +22,6 @@
 		0B3C0F51253F497900028EF9 /* KumadaiPortal in Frameworks */ = {isa = PBXBuildFile; productRef = 0B3C0F50253F497900028EF9 /* KumadaiPortal */; };
 		0BBAE7EE2541C47C00DA7EF2 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE7ED2541C47C00DA7EF2 /* Mocks.swift */; };
 		0BBAE7F12541C6E700DA7EF2 /* Array+safeSubscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE7F02541C6E700DA7EF2 /* Array+safeSubscript.swift */; };
-		0BBAE7FE254213E400DA7EF2 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE7FD254213E400DA7EF2 /* SignInView.swift */; };
 		0BBAE8002542152700DA7EF2 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE7FF2542152700DA7EF2 /* AuthenticationService.swift */; };
 		0BBAE8042542DC5400DA7EF2 /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE8032542DC5400DA7EF2 /* TimeTableView.swift */; };
 		0BBAE8062542DD1A00DA7EF2 /* GradesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */; };
@@ -31,6 +33,9 @@
 		0B2DF89D2541832800065712 /* TimeTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableViewModel.swift; sourceTree = "<group>"; };
 		0B2F899725480E5A007FD22C /* KumadaiPortal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KumadaiPortal-Info.plist"; sourceTree = "<group>"; };
 		0B2F899B25486803007FD22C /* ExampleKumadai-Portal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleKumadai-Portal-Info.plist"; sourceTree = "<group>"; };
+		0B2F899D25486DC9007FD22C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0B2F899F25486E40007FD22C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		0B2F89A125486E88007FD22C /* PeriodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
 		0B3C0F35253F439900028EF9 /* KumadaiPortalClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumadaiPortalClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3C0F38253F439900028EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B3C0F3A253F439900028EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +46,6 @@
 		0B3C0F46253F439E00028EF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0BBAE7ED2541C47C00DA7EF2 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
 		0BBAE7F02541C6E700DA7EF2 /* Array+safeSubscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+safeSubscript.swift"; sourceTree = "<group>"; };
-		0BBAE7FD254213E400DA7EF2 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0BBAE7FF2542152700DA7EF2 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
 		0BBAE8032542DC5400DA7EF2 /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
 		0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesView.swift; sourceTree = "<group>"; };
@@ -119,10 +123,12 @@
 		0BBAE8012542DC2E00DA7EF2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0BBAE7FD254213E400DA7EF2 /* SignInView.swift */,
+				0B2F899F25486E40007FD22C /* SignInView.swift */,
 				0B3C0F3C253F439900028EF9 /* ContentView.swift */,
 				0BBAE8032542DC5400DA7EF2 /* TimeTableView.swift */,
 				0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */,
+				0B2F899D25486DC9007FD22C /* RootView.swift */,
+				0B2F89A125486E88007FD22C /* PeriodCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -223,9 +229,11 @@
 				0BBAE8082542DDBA00DA7EF2 /* GradesViewModel.swift in Sources */,
 				0BBAE80B25430AAB00DA7EF2 /* CookieManager.swift in Sources */,
 				0B3C0F3D253F439900028EF9 /* ContentView.swift in Sources */,
-				0BBAE7FE254213E400DA7EF2 /* SignInView.swift in Sources */,
+				0B2F899E25486DC9007FD22C /* RootView.swift in Sources */,
 				0BBAE7EE2541C47C00DA7EF2 /* Mocks.swift in Sources */,
 				0BBAE8042542DC5400DA7EF2 /* TimeTableView.swift in Sources */,
+				0B2F89A225486E88007FD22C /* PeriodCell.swift in Sources */,
+				0B2F89A025486E41007FD22C /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
