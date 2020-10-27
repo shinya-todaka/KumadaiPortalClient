@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Kanna",
+        "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
+        "state": {
+          "branch": null,
+          "revision": "4a80ebe93b6966d5083394fcaaaff57a2fcec935",
+          "version": "5.2.3"
+        }
+      },
+      {
+        "package": "KumadaiPortal",
+        "repositoryURL": "https://github.com/shinya-todaka/KumadaiPortal",
+        "state": {
+          "branch": null,
+          "revision": "1a43b23c13c3320faf0dc0bfa0a47fc9a9eda4dc",
+          "version": "0.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
