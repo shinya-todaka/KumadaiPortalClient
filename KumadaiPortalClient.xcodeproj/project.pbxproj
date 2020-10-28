@@ -13,6 +13,7 @@
 		0B2F899E25486DC9007FD22C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F899D25486DC9007FD22C /* RootView.swift */; };
 		0B2F89A025486E41007FD22C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F899F25486E40007FD22C /* SignInView.swift */; };
 		0B2F89A225486E88007FD22C /* PeriodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F89A125486E88007FD22C /* PeriodCell.swift */; };
+		0B2F89A425486F5E007FD22C /* GradeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2F89A325486F5E007FD22C /* GradeCell.swift */; };
 		0B3C0F39253F439900028EF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F38253F439900028EF9 /* AppDelegate.swift */; };
 		0B3C0F3B253F439900028EF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F3A253F439900028EF9 /* SceneDelegate.swift */; };
 		0B3C0F3D253F439900028EF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3C0F3C253F439900028EF9 /* ContentView.swift */; };
@@ -27,6 +28,8 @@
 		0BBAE8062542DD1A00DA7EF2 /* GradesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */; };
 		0BBAE8082542DDBA00DA7EF2 /* GradesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE8072542DDBA00DA7EF2 /* GradesViewModel.swift */; };
 		0BBAE80B25430AAB00DA7EF2 /* CookieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBAE80A25430AAA00DA7EF2 /* CookieManager.swift */; };
+		0BDC2ACA2549831800173051 /* FixedSizeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC2AC92549831800173051 /* FixedSizeTable.swift */; };
+		0BDC2ACC2549839500173051 /* TimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDC2ACB2549839500173051 /* TimeTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,7 @@
 		0B2F899D25486DC9007FD22C /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		0B2F899F25486E40007FD22C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		0B2F89A125486E88007FD22C /* PeriodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodCell.swift; sourceTree = "<group>"; };
+		0B2F89A325486F5E007FD22C /* GradeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradeCell.swift; sourceTree = "<group>"; };
 		0B3C0F35253F439900028EF9 /* KumadaiPortalClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KumadaiPortalClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3C0F38253F439900028EF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B3C0F3A253F439900028EF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +55,8 @@
 		0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesView.swift; sourceTree = "<group>"; };
 		0BBAE8072542DDBA00DA7EF2 /* GradesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewModel.swift; sourceTree = "<group>"; };
 		0BBAE80A25430AAA00DA7EF2 /* CookieManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CookieManager.swift; sourceTree = "<group>"; };
+		0BDC2AC92549831800173051 /* FixedSizeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedSizeTable.swift; sourceTree = "<group>"; };
+		0BDC2ACB2549839500173051 /* TimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +132,12 @@
 				0B2F899F25486E40007FD22C /* SignInView.swift */,
 				0B3C0F3C253F439900028EF9 /* ContentView.swift */,
 				0BBAE8032542DC5400DA7EF2 /* TimeTableView.swift */,
-				0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */,
-				0B2F899D25486DC9007FD22C /* RootView.swift */,
+				0BDC2ACB2549839500173051 /* TimeTable.swift */,
+				0BDC2AC92549831800173051 /* FixedSizeTable.swift */,
 				0B2F89A125486E88007FD22C /* PeriodCell.swift */,
+				0BBAE8052542DD1A00DA7EF2 /* GradesView.swift */,
+				0B2F89A325486F5E007FD22C /* GradeCell.swift */,
+				0B2F899D25486DC9007FD22C /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B2F89A425486F5E007FD22C /* GradeCell.swift in Sources */,
 				0BBAE7F12541C6E700DA7EF2 /* Array+safeSubscript.swift in Sources */,
+				0BDC2ACA2549831800173051 /* FixedSizeTable.swift in Sources */,
 				0B3C0F39253F439900028EF9 /* AppDelegate.swift in Sources */,
 				0B3C0F3B253F439900028EF9 /* SceneDelegate.swift in Sources */,
 				0BBAE8002542152700DA7EF2 /* AuthenticationService.swift in Sources */,
@@ -233,6 +244,7 @@
 				0BBAE7EE2541C47C00DA7EF2 /* Mocks.swift in Sources */,
 				0BBAE8042542DC5400DA7EF2 /* TimeTableView.swift in Sources */,
 				0B2F89A225486E88007FD22C /* PeriodCell.swift in Sources */,
+				0BDC2ACC2549839500173051 /* TimeTable.swift in Sources */,
 				0B2F89A025486E41007FD22C /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

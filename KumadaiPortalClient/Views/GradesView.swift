@@ -15,12 +15,7 @@ struct GradesView: View {
     
     var body: some View {
         List(gradesViwModel.grades, id: \.no) { grade in
-            HStack {
-                Text(grade.subjectName)
-                Spacer()
-                Text(grade.evaluation.rawValue)
-            }
-           
+           GradeCell(grade: grade)
         }
         .onAppear(perform: {
             gradesViwModel.fetchData()

@@ -33,7 +33,6 @@ class TimeTableViewModel: ObservableObject {
                     self.timetable = timetable
                 }
             }
-            
         }
     }
     

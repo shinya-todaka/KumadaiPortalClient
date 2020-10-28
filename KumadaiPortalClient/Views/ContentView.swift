@@ -16,23 +16,23 @@ struct ContentView: View {
             
             NavigationView {
                 TimeTableView()
-                .navigationBarTitle("TimeTable")
+                .navigationBarTitle("時間割")
                 .navigationBarTitleDisplayMode(.inline)
             }
             .tabItem {
                 Image(systemName: "calendar.circle.fill")
-                Text("timetable")
+                Text("時間割")
             }
             .tag(1)
             
             NavigationView {
                 GradesView()
-                .navigationBarTitle("Grades")
+                .navigationBarTitle("成績")
                 .navigationBarTitleDisplayMode(.inline)
             }
             .tabItem {
                 Image(systemName: "table.fill")
-                Text("grades")
+                Text("成績")
             }.tag(2)
         }
     }
