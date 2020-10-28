@@ -13,6 +13,7 @@ import Combine
 class GradesViewModel: ObservableObject {
     @Published var grades: [Grade] = []
     @Published var timeTableError: Error?
+    @Published var isLoading = true
     
     func fetchData() {
         KumadaiPortal.shared.getSeiseki { (grades, error) in
@@ -20,6 +21,7 @@ class GradesViewModel: ObservableObject {
                 
                 print(error)
                 DispatchQueue.main.async {
+                    self.isLoading = false
                     self.timeTableError = error
                 }
                 return
@@ -28,6 +30,7 @@ class GradesViewModel: ObservableObject {
             if let grades = grades {
                 
                 DispatchQueue.main.async {
+                    self.isLoading = false
                     self.grades = grades
                 }
             }

@@ -15,7 +15,14 @@ struct TimeTableView: View {
     let weeks = ["月", "火", "水", "木", "金"]
     
     var body: some View {
-        TimeTable(timeTable: viewModel.timetable)
+        
+        Group {
+            if viewModel.isLoading {
+                ProgressView()
+            } else {
+                TimeTable(timeTable: viewModel.timetable)
+            }
+        }
         .onAppear(perform: {
             viewModel.fetchData()
         })

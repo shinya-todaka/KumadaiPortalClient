@@ -13,7 +13,6 @@ struct ContentView: View {
     
     var body: some View {
         TabView {
-            
             NavigationView {
                 TimeTableView()
                 .navigationBarTitle("時間割")

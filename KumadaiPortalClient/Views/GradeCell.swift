@@ -32,7 +32,7 @@ struct GradeCell: View {
                 
                 Spacer()
                 
-                Image(systemName: grade.result ? "checkmark.circle" : "circle")
+                grade.result ? Text("合格").foregroundColor(Color.red) : Text("不合格")
             }
         }
     }

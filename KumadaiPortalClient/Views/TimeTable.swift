@@ -18,10 +18,8 @@ struct TimeTable: View {
     var body: some View {
         GeometryReader { proxy in
             FixedSizeTable(size: proxy.size, rows: 8, columns: 6,firstRowHeight: 30, firstColumnWidth: 30, firstRowItems: firstRowItems, firstColumnItems: firstColumnItems, innerContent: { innerRow, innerColumn in
-                if let periods = timeTable[safe: innerColumn].flatMap{ $0 }  {
-                    if let period = periods[safe: innerRow] {
-                        PeriodCell(period: period)
-                    }
+                if let period = timeTable[safe: innerColumn].flatMap({ $0 })?[safe: innerRow].flatMap({ $0 }) {
+                    PeriodCell(period: period)
                 }
             })
         }

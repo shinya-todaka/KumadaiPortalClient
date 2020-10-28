@@ -14,8 +14,15 @@ struct GradesView: View {
     @ObservedObject var gradesViwModel = GradesViewModel()
     
     var body: some View {
-        List(gradesViwModel.grades, id: \.no) { grade in
-           GradeCell(grade: grade)
+        
+        Group {
+            if gradesViwModel.isLoading {
+                ProgressView()
+            } else {
+                List(gradesViwModel.grades, id: \.no) { grade in
+                   GradeCell(grade: grade)
+                }
+            }
         }
         .onAppear(perform: {
             gradesViwModel.fetchData()

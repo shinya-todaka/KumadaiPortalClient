@@ -12,6 +12,7 @@ import Combine
 
 class TimeTableViewModel: ObservableObject {
     @Published var timetable: [[Period?]?] = []
+    @Published var isLoading = true
     @Published var timeTableError: Error?
     
     let semester: Semester
@@ -24,11 +25,16 @@ class TimeTableViewModel: ObservableObject {
     func fetchData() {
         KumadaiPortal.shared.getTimeTable { (timetableResponse, error) in
             if let error = error {
-                self.timeTableError = error
+                
+                DispatchQueue.main.async {
+                    self.timeTableError = error
+                    self.isLoading = false
+                }
                 return
             }
             
             DispatchQueue.main.async {
+                self.isLoading = false
                 if let timetable = timetableResponse?.courses._2020?.second?.timetable {
                     self.timetable = timetable
                 }

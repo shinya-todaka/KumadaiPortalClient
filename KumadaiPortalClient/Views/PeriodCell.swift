@@ -10,12 +10,12 @@ import KumadaiPortal
 import SwiftUI
 
 struct PeriodCell: View {
-    let period: Period?
+    let period: Period
     var body: some View {
-        if let name = period?.courses.first?.name {
+        if let name = period.courses.first?.name {
             Text(name)
         } else {
-            Color.white
+            Spacer()
         }
     }
 }
